@@ -1,0 +1,99 @@
+/* styles.css */
+/* universal selector - Applies to whole document */
+body {
+	font-family: sans-serif;
+	background: #082c6c;
+	color: #fff;
+}
+/* To center everything in game */
+.game__container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Title of the game */
+.game__title {
+	position: absolute;
+	top: 0;
+	font-size: 4rem;
+	z-index: 2;
+}
+
+/* Score Board */
+.game__score {
+	display: flex;
+	width: 30vw;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 70px;
+	z-index: 1;
+}
+
+/* Score */
+.p-count,.c-count {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+/* displaying three buttons in one line */
+.game__options {
+	display: flex;
+	width: 50vw;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+}
+
+/* Styling on all three buttons */
+.rock, .paper, .scissor {
+	padding: 0.8rem;
+	width: 100px;
+	border-radius: 10px;
+	background: green;
+	outline: none;
+	border-color: green;
+	border: none;
+	cursor: pointer;
+}
+
+.game__move {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* Reload button style */
+.game__reload {
+	display: none;
+	margin-top: 2rem;
+	padding: 1rem;
+	background: green;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.result {
+	margin-top: 20px;
+	font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{
+	.game__title {
+		text-align: center;
+	}
+	.game__score {
+		position: absolute;
+		top: 200px;
+		width: 100vw;
+	}
+	.game__options {
+		width: 100vw;
+	}
+}
