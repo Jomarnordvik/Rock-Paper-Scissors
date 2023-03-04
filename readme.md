@@ -3,6 +3,7 @@
 This is a simple rock-paper-scissors game built with HTML, CSS, and JavaScript.
 The game has a user interface with three buttons representing the three options: Rock, Paper, and Scissors.
 The player will play against the computer in a series of 10 rounds.
+
 After 10 rounds, the game will end and the player will see the final result.
 
 
