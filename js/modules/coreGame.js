@@ -30,6 +30,12 @@ export default function coreGame() {
 				option.addEventListener('click', handleOptionClick);
 			});
 		}
+
+		function computerPlay() {
+			const options = ['rock', 'paper', 'scissors'];
+			const randomIndex = Math.floor(Math.random() * options.length);
+			return options[randomIndex];
+		 }		 
 		
 		function winner(player, computer) {
 			const result = document.querySelector('.game__result');
@@ -49,15 +55,17 @@ export default function coreGame() {
 					playerScore++;
 					playerScoreBoard.textContent = playerScore;
 				}
-			} else if (player == 'scissors') {
+			} else if (player == 'scissor') {
 				if (computer == 'rock') {
 					result.textContent = 'Computer Won';
 					computerScore++;
 					computerScoreBoard.textContent = computerScore;
-				} else {
+				} else if (computer == 'paper') {
 					result.textContent = 'Player Won';
 					playerScore++;
 					playerScoreBoard.textContent = playerScore;
+				} else {
+					result.textContent = 'Tie';
 				}
 			} else if (player == 'paper') {
 				if (computer == 'scissors') {
@@ -104,6 +112,7 @@ export default function coreGame() {
 			});
 		}
 		
+		computerPlay();
 		playGame();
 	}
 	
