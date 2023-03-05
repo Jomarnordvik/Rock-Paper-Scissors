@@ -29,13 +29,7 @@ export default function coreGame() {
 			playerOptions.forEach(function(option) {
 				option.addEventListener('click', handleOptionClick);
 			});
-		}
-
-		function computerPlay() {
-			const options = ['rock', 'paper', 'scissors'];
-			const randomIndex = Math.floor(Math.random() * options.length);
-			return options[randomIndex];
-		 }		 
+		} 
 		
 		function winner(player, computer) {
 			const result = document.querySelector('.game__result');
@@ -112,7 +106,6 @@ export default function coreGame() {
 			});
 		}
 		
-		computerPlay();
 		playGame();
 	}
 	
