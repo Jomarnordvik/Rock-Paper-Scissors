@@ -55,7 +55,7 @@ export default function coreGame() {
 					playerScore++;
 					playerScoreBoard.textContent = playerScore;
 				}
-			} else if (player == 'scissor') {
+			} else if (player == 'scissors') {
 				if (computer == 'rock') {
 					result.textContent = 'Computer Won';
 					computerScore++;
