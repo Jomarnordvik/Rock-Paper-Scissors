@@ -5,10 +5,10 @@ export default function coreGame() {
 		let moves = 0;
 		
 		function playGame() {
-			const rockBtn = document.querySelector('.rock');
-			const paperBtn = document.querySelector('.paper');
-			const scissorBtn = document.querySelector('.scissor');
-			const playerOptions = [rockBtn, paperBtn, scissorBtn];
+			const rockButton = document.querySelector('.rock');
+			const paperButton = document.querySelector('.paper');
+			const scissorButton = document.querySelector('.scissor');
+			const playerOptions = [rockButton, paperButton, scissorButton];
 			const computerOptions = ['rock', 'paper', 'scissors'];
 			
 			function handleOptionClick() {
@@ -81,7 +81,7 @@ export default function coreGame() {
 		function gameOver(playerOptions, movesLeft) {
 			const chooseMove = document.querySelector('.game__move');
 			const result = document.querySelector('.game__result');
-			const reloadBtn = document.querySelector('.game__reload');
+			const reloadButton = document.querySelector('.game__reload');
 			
 			playerOptions.forEach(function(option) {
 				option.style.display = 'none';
@@ -103,16 +103,16 @@ export default function coreGame() {
 				result.innerText = 'Tie';
 				result.style.color = 'black';
 			}
-			reloadBtn.innerText = 'Restart';
-			reloadBtn.style.display = 'flex';
-			reloadBtn.classList.add('game__reload-button');
-			reloadBtn.addEventListener('click', function() {
+			reloadButton.innerText = 'Restart';
+			reloadButton.style.display = 'flex';
+			reloadButton.classList.add('game__reload-button');
+			reloadButton.addEventListener('click', function() {
 				window.location.reload();
 			});
 		}
 		
 		playGame();
 	}
-	
+
 	game();	 
 }
