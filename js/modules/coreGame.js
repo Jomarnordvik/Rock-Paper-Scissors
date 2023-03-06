@@ -83,7 +83,7 @@ export default function coreGame() {
 				option.style.display = 'none';
 			});
 			
-			chooseMove.innerText = 'Game Over!!';
+			chooseMove.innerText = 'Good Game!';
 			movesLeft.style.display = 'none';
 			
 			if (playerScore > computerScore) {
@@ -97,10 +97,11 @@ export default function coreGame() {
 			} else {
 				result.style.fontSize = '2rem';
 				result.innerText = 'Tie';
-				result.style.color = 'grey';
+				result.style.color = 'black';
 			}
 			reloadBtn.innerText = 'Restart';
 			reloadBtn.style.display = 'flex';
+			reloadBtn.classList.add('game__reload-button');
 			reloadBtn.addEventListener('click', function() {
 				window.location.reload();
 			});
