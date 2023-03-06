@@ -2,18 +2,25 @@
 /* universal selector - Applies to whole document */
 body {
 	font-family: sans-serif;
-	background: #082c6c;
+	background: black;
 	color: #fff;
 	user-select: none;
+	display: flex;
+	justify-content: center;
 }
 /* To center everything in game */
 .game__container {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
-	width: 100vw;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	height: 70vh;
+	width: 70vw;
+	border: 2px solid black;
+	border-radius: 20px;
+	background-color: #082c6c;
 }
 
 /* Title of the game */
@@ -26,12 +33,20 @@ body {
 
 /* Score Board */
 .game__score {
+	position: absolute;
+	top: 150px;
 	display: flex;
 	width: 30vw;
 	justify-content: space-evenly;
-	position: absolute;
-	top: 150px;
 	z-index: 1;
+}
+
+.score__player {
+	color: green;
+}
+
+.score__CPU {
+	color: red;
 }
 
 /* Score */
@@ -42,6 +57,11 @@ body {
 }
 
 /* displaying three buttons in one line */
+.game__moveset-container {
+	text-align: center;
+	margin-top: 200px;
+}
+
 .game__options {
 	display: flex;
 	width: 50vw;
