@@ -16,7 +16,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-top: 100px;
-	height: 70vh;
+	height: 80vh;
 	width: 70vw;
 	border: 2px solid black;
 	border-radius: 20px;
@@ -50,16 +50,21 @@ body {
 }
 
 /* Score */
-.p-count,.c-count {
+.game__player-score-count,.game__cpu-score-count {
 	text-align: center;
 	font-size: 1.5rem;
 	margin-top: 1rem;
 }
+.game__computerChoice {
+	position: absolute;
+	bottom: 70px;
+}
+
 
 /* displaying three buttons in one line */
 .game__moveset-container {
 	text-align: center;
-	margin-top: 200px;
+	margin-top: 150px;
 }
 
 .game__options {
