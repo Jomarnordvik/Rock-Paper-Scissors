@@ -55,6 +55,11 @@ body {
 	font-size: 1.5rem;
 	margin-top: 1rem;
 }
+.game__computerChoice {
+	position: absolute;
+	bottom: 170px;
+}
+
 
 /* displaying three buttons in one line */
 .game__moveset-container {

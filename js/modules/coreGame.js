@@ -37,6 +37,10 @@ export default function coreGame() {
 			const computerScoreBoard = document.querySelector('.c-count');
 			player = player.toLowerCase();
 			computer = computer.toLowerCase();
+			
+			const computerChoiceDisplay = document.querySelector('.game__computerChoice');
+			computerChoiceDisplay.textContent = `Computer Chose: ${computer}`;
+
 			if (player === computer) {
 				result.textContent = 'Tie';
 			} else if (player == 'rock') {
