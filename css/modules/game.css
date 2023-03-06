@@ -42,6 +42,11 @@ body {
 }
 
 /* displaying three buttons in one line */
+.game__moveset-container {
+	text-align: center;
+	margin-top: 50px;
+}
+
 .game__options {
 	display: flex;
 	width: 50vw;
