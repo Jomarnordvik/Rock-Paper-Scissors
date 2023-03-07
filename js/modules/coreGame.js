@@ -6,6 +6,7 @@ export default function coreGame() {
 		function game() {
 			let playerScore = 0;
 			let computerScore = 0;
+			const maxMoves = window.location.pathname == "/html/lastManStanding.html" ? 1 : 3;
 			let moves = 0;
 			
 			function playGame() {
@@ -18,14 +19,14 @@ export default function coreGame() {
 				function handleOptionClick() {
 					const movesLeft = document.querySelector('.game__movesLeft');
 					moves++;
-					movesLeft.innerText = `Moves Left: ${3 - moves}`;
+					movesLeft.innerText = `Moves Left: ${maxMoves - moves}`;
 					
 					const choiceNumber = Math.floor(Math.random() * 3);
 					const computerChoice = computerOptions[choiceNumber];
 					
 					winner(this.innerText, computerChoice);
 					
-					if (moves == 3) {
+					if (moves == maxMoves) {
 						gameOver(playerOptions, movesLeft);
 					}
 				}
