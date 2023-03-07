@@ -6,7 +6,8 @@ And alternate hardcore gamemode is also available with two additional options: L
 The player will play against the computer in a series of 3 rounds. (Best out of three)
 
 After 3 rounds, the game will end and the player will see the final result.
-*The alternative gamemode consists of 5 rounds.*
+*The hardcore gamemode consists of 5 rounds.*
+*Last Man Standing only has one singular round*
 
 
 ### Gamemodes
@@ -17,7 +18,7 @@ The computer will randomly select its move, and the winner will be determined ba
 - Paper covers Rock
 - If the player and computer pick the same option, its a tie.
 
-The Last Man Standing gamemode follows the same rules as above, but you've only got one move.
+The Last Man Standing gamemode follows the same rules as above
 
 
 For the hardcore gamemode, which adds two additional options, Lizard and Spock, the following rules apply:
