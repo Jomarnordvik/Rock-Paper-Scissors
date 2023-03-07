@@ -5,13 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Janken</title>
-
+	
 	<link rel="stylesheet" href="/css/style.css">
 	<script src="/js/script.js" type="module"></script>
 </head>
 <body>
+	<header>
+		<nav class="navbar">
+			<ul>
+				<li class="navbar__beginner"><a href="/index.html">Beginner</a></li>
+				<li class="navbar__hardcore"><a href="/html/gamemode2.html">Hardcore</a></li>
+			</ul>
+		</nav>
+	</header>
 	<section class="game__container">
-
+		
 		<div class="game__title">Rock Paper Scissors</div>
 		<div class="game__score">
 			<div class="score__player">
@@ -25,7 +33,7 @@
 		</div>
 		<div class="game__moveset-container">
 			<div class="game__move">Choose your move</div>
-			<div class="game__movesLeft">Moves left: 10</div>
+			<div class="game__movesLeft">Best of three</div>
 			
 			<div class="game__options">
 				<button class="rock">Rock</button>
