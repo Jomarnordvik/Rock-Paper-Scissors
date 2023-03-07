@@ -136,10 +136,10 @@ export default function secondaryGame() {
 						window.location.reload();
 					});
 				}
-				
+
 				playSecondaryGame();
 			}
-			
+
 			secondaryGameMechanics();	
 		} else {
 			break
