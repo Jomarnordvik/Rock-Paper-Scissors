@@ -89,6 +89,17 @@ export default function secondaryGame() {
 						} else if (computer == 'paper' || computer == 'spock') {
 							result.textContent = 'Player Won';
 							playerScore++;
+							playerScoreBoard.textContent = playerScore;
+						}
+					} else if (player == 'spock') {
+						if (computer == 'paper' || computer == 'lizard') {
+							result.textContent = 'Computer Won';
+							computerScore++
+							computerScoreBoard.textContent = computerScore;
+						} else if (computer == 'rock' || computer == 'scissors') {
+							result.textContent = 'Player Won';
+							playerScore++;
+							playerScoreBoard.textContent = playerScore;
 						}
 					}
 				}
