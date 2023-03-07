@@ -3,10 +3,7 @@
 body {
 	font-family: sans-serif;
 	background: white;
-	color: #fff;
 	user-select: none;
-	display: flex;
-	justify-content: center;
 }
 /* To center everything in game */
 .game__container {
@@ -15,18 +12,19 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 100px;
+	top: 40px;
+	margin: auto;
 	height: 80vh;
 	width: 70vw;
-	border: 2px solid black;
-	border-radius: 20px;
-	background-color: rgb(153, 153, 153);
+	border: 3px solid black;
+	color: black;
+	background-color: white;
 }
 
 /* Title of the game */
 .game__title {
 	position: absolute;
-	top: 70px;
+	top: 30px;
 	font-size: 4rem;
 	z-index: 2;
 }
@@ -34,7 +32,7 @@ body {
 /* Score Board */
 .game__score {
 	position: absolute;
-	top: 150px;
+	top: 125px;
 	display: flex;
 	width: 30vw;
 	justify-content: space-evenly;
@@ -79,10 +77,9 @@ body {
 .paper,
 .scissor {
 	margin: 40px 20px 0 20px;
-	padding: 1rem;
-	width: 125px;
-	border-radius: 5px;
-	background: rgb(151, 176, 151);
+	padding: 1.5rem;
+	width: 150px;
+	background-color: white;
 	border-color: black;
 	cursor: pointer;
 }
@@ -90,7 +87,8 @@ body {
 .rock:hover,
 .paper:hover,
 .scissor:hover {
-	background-color: rgb(101, 194, 101);
+	background-color: black;
+	color: white;
 }
 
 .game__move {
@@ -103,17 +101,17 @@ body {
 	display: none;
 	margin-top: 2rem;
 	padding: 1rem;
-	background: rgb(151, 176, 151);
+	background: white;
 	outline: none;
 	border: 2px solid black;
-	border-radius: 10px;
 	cursor: pointer;
 	text-align: center;
 }
 
 .game__reload:hover {
 	text-align: center;
-	background-color: rgb(101, 194, 101);
+	background-color: black;
+	color: white;
 }
 
 .game__reload-button {
