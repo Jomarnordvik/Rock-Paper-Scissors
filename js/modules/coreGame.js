@@ -120,7 +120,9 @@ export default function coreGame() {
 			}
 			
 			game();	
-		} 
+		} else {
+			break
+		}
 	}
 }
 	
