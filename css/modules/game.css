@@ -75,7 +75,9 @@ body {
 /* Styling on all three buttons */
 .rock,
 .paper,
-.scissor {
+.scissor,
+.lizard,
+.spock {
 	margin: 40px 20px 0 20px;
 	padding: 1.5rem;
 	width: 150px;
@@ -86,7 +88,9 @@ body {
 
 .rock:hover,
 .paper:hover,
-.scissor:hover {
+.scissor:hover,
+.lizard:hover,
+.spock:hover {
 	background-color: black;
 	color: white;
 }
