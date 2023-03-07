@@ -1,5 +1,5 @@
 export default function coreGame() {	
-	const allowedPaths = ["/index.html", "/html/lastManStanding.html"];
+	const allowedPaths = ["/index.html", "/html/lastManStanding.html", "/#", ""];
 	
 	if (allowedPaths.includes(window.location.pathname)) {
 		console.log('0')
