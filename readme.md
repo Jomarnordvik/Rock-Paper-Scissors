@@ -9,14 +9,15 @@ After 3 rounds, the game will end and the player will see the final result.
 *The alternative gamemode consists of 5 rounds.*
 
 
-### How to Play
-
+### Gamemodes
 To start the game, click on one of the three buttons to make your move.
 The computer will randomly select its move, and the winner will be determined based on the following rules:
 - Rock crushes Scissors
 - Scissors cut Paper
 - Paper covers Rock
 - If the player and computer pick the same option, its a tie.
+
+The Last Man Standing gamemode follows the same rules as above, but you've only got one move.
 
 For the hardcore gamemode, which adds two additional options, Lizard and Spock, the following rules apply:
 - Rock crushes Scissors **and** Lizard
