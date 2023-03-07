@@ -14,14 +14,14 @@ export default function coreGame() {
 			function handleOptionClick() {
 				const movesLeft = document.querySelector('.game__movesLeft');
 				moves++;
-				movesLeft.innerText = `Moves Left: ${10 - moves}`;
+				movesLeft.innerText = `Moves Left: ${3 - moves}`;
 				
 				const choiceNumber = Math.floor(Math.random() * 3);
 				const computerChoice = computerOptions[choiceNumber];
 				
 				winner(this.innerText, computerChoice);
 				
-				if (moves == 10) {
+				if (moves == 3) {
 					gameOver(playerOptions, movesLeft);
 				}
 			}
