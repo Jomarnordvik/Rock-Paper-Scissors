@@ -19,6 +19,7 @@ The computer will randomly select its move, and the winner will be determined ba
 
 The Last Man Standing gamemode follows the same rules as above, but you've only got one move.
 
+
 For the hardcore gamemode, which adds two additional options, Lizard and Spock, the following rules apply:
 - Rock crushes Scissors **and** Lizard
 - Scissors cut Paper **and** Decapitates Lizard
