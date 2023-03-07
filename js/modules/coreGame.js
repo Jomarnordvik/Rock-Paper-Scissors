@@ -6,7 +6,7 @@ export default function coreGame() {
 		function game() {
 			let playerScore = 0;
 			let computerScore = 0;
-			const maxMoves = window.location.pathname == "/html/lastManStanding.html" ? 1 : 3;
+			const maxMoves = window.location.pathname == "/html/lastManStanding" ? 1 : 3;
 			let moves = 0;
 			
 			function playGame() {
