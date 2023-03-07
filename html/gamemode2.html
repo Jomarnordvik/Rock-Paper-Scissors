@@ -10,6 +10,44 @@
 	<script src="/js/script.js" type="module"></script>
 </head>
 <body>
-	
+	<header>
+		<nav class="navbar">
+			<ul class="navbar__menu">
+				<li class="menu__beginner"><a href="/index.html">Beginner</a></li>
+				<li class="menu__hardcore"><a href="/html/gamemode2.html">Hardcore</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="game__container">
+		
+		<div class="game__title">Rock Paper Scissors 2.0</div>
+		<div class="game__score">
+			<div class="score__player">
+				<h2>Player</h2>
+				<p class="game__player-score-count count"></p>
+			</div>
+			<div class="score__CPU">
+				<h2>CPU</h2>
+				<p class="game__cpu-score-count count"></p>
+			</div>
+		</div>
+		<div class="game__moveset-container">
+			<div class="game__move">Choose your move</div>
+			<div class="game__movesLeft">Best out of five</div>
+			
+			<div class="game__options">
+				<button class="secondaryGame__rock">Rock</button>
+				<button class="secondaryGame__paper">Paper</button>
+				<button class="secondaryGame__scissor">Scissors</button>
+				<button class="secondaryGame__lizard">Lizard</button>
+				<button class="secondaryGame__spock">Spock</button>
+			</div>
+		</div>
+		<div class="game__computerChoice"></div>
+		<div class="game__menu">
+			<div class="game__result"></div>
+			<div class="game__reload"></div>
+		</div>
+	</section>
 </body>
 </html>

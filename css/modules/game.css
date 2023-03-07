@@ -73,9 +73,7 @@ body {
 }
 
 /* Styling on all three buttons */
-.rock,
-.paper,
-.scissor {
+button {
 	margin: 40px 20px 0 20px;
 	padding: 1.5rem;
 	width: 150px;
@@ -84,9 +82,7 @@ body {
 	cursor: pointer;
 }
 
-.rock:hover,
-.paper:hover,
-.scissor:hover {
+button:hover {
 	background-color: black;
 	color: white;
 }
