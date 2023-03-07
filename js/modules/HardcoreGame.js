@@ -1,14 +1,14 @@
-export default function secondaryGame() {
-	const allowedPaths = ["/html/gamemode2.html", "/#", ""];
+export default function hardcoreGame() {
+	const allowedPaths = ["/html/hardcore.html", "/#", ""];
 	
 	for (let i = 0; i < allowedPaths.length; i++) {
 		if (window.location.pathname == allowedPaths[i]) {
-			function secondaryGameMechanics() {
+			function hardcoreGameMechanics() {
 				let playerScore = 0;
 				let computerScore = 0;
 				let moves = 0;
 				
-				function playSecondaryGame() {
+				function playHardcoreGame() {
 					const rockButton = document.querySelector('.secondaryGame__rock');
 					const paperButton = document.querySelector('.secondaryGame__paper');
 					const scissorButton = document.querySelector('.secondaryGame__scissor');
@@ -137,10 +137,10 @@ export default function secondaryGame() {
 					});
 				}
 
-				playSecondaryGame();
+				playHardcoreGame();
 			}
 
-			secondaryGameMechanics();	
+			hardcoreGameMechanics();	
 		} else {
 			break
 		}

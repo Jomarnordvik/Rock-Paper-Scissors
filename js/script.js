@@ -1,5 +1,5 @@
 import coreGame from '/js/modules/coreGame.js'
-import secondaryGame from '/js/modules/secondaryGame.js'
+import hardcoreGame from '/js/modules/hardcoreGame.js'
 
 coreGame();
-secondaryGame();
+hardcoreGame();
