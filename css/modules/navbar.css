@@ -18,6 +18,7 @@ header {
 }
 
 .menu__beginner:hover,
+.menu__lastManStanding:hover,
 .menu__hardcore:hover {
 	color: white;
 	background-color: black;
